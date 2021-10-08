@@ -11,83 +11,80 @@
 </head>
 
 <body>
-
-
   <!-- ヘッダー -->
-  <header id="headerTop">
+  <header class="headerTop">
     <!-- トップ画像 -->
-    <div class="heroimg">
-      <!-- <img src="/images/top-1920-1080.jpg" alt="top画像"> -->
-      <!-- トップ画像に設置してあるリンク -->
-      <div class="top__link"><a href="#"></a>
-      </div><!-- .top__link -->
-    </div><!-- heroimg -->
+    <div class="headerTop__img">
+      <h1><a href="#">morimayuko&nbsp;portfolio</a></h1>
+    </div><!-- headerTop__img -->
 
-    <!-- gnav -->
-    <div class="gnav">
-      <ul class="gnav__link">
-        <li class="gnav__item">work</li>
-        <li class="gnav__item">skill</li>
-        <li class="gnav__item">about</li>
-        <li class="gnav__item">contact</li>
-      </ul><!-- .gnav__link -->
-    </div><!-- .gnav -->
+      <!-- gnavのwrapper -->
+      <div class="gnav">
+        <!-- flex親要素 -->
+        <ul class="gnav__link">
+          <!-- flex子要素 -->
+          <li class="gnav__item">work</li>
+          <li class="gnav__item">skill</li>
+          <li class="gnav__item">about</li>
+          <li class="gnav__item">contact</li>
+        </ul><!-- .gnav__link -->
+      </div><!-- .gnav -->
   </header><!-- #headerTop -->
 
-  <main>
-    <h2 class="head2">work</h2>
-    <!-- モックアップ -->
-    <section id="work" class="workBox">
-      <div class="workBox__list">
-        <img src="" alt="" class="workBox__list--item">
-        <img src="" alt="" class="workBox__list--item">
-      </div><!-- ここまでworkWrapp__list -->
+  <div class="wrapper">
+    <main>
+      <h2 class="head2">work</h2>
+      <!-- モックアップ -->
+      <section id="work" class="workBox">
+        <div class="workBox__list">
+          <img src="" alt="" class="workBox__list--item">
+          <img src="" alt="" class="workBox__list--item">
+        </div><!-- ここまでworkWrapp__list -->
+        <!-- viewmoreボタン -->
+        <a href="" class="viewMore">viewMore>></a>
+      </section><!-- ここまでworkWrapp -->
+      <h2 class="head2">skill</h2>
+      <!-- スキルgrid -->
+      <section id="skill" class="skillBox">
+        <div class="skill__list">
+          <div class="skill__list--item">html5&nbsp;/&nbsp;css3</div>
+          <div class="skill__list--item">Scss</div>
+          <div class="skill__list--item">JavaScript</div>
+          <div class="skill__list--item">JQuery</div>
+          <div class="skill__list--item">WordPress</div>
+          <div class="skill__list--item">PHP</div>
+          <div class="skill__list--item">Photoshop</div>
+          <div class="skill__list--item">illastlator</div>
+          <div class="skill__list--item">Xd</div>
+          <div class="skill__list--item">Exel</div>
+          <div class="skill__list--item">PowerPoint</div>
+          <div class="skill__list--item">Word</div>
+          <div class="skill__list--item">PremierePro</div>
+        </div>
+      </section>
       <!-- viewmoreボタン -->
       <a href="" class="viewMore">viewMore>></a>
-    </section><!-- ここまでworkWrapp -->
-    <h2 class="head2">skill</h2>
-    <!-- スキルgrid -->
-    <section id="skill" class="skillBox">
-      <div class="skill__list">
-        <div class="skill__list--item">html5&nbsp;/&nbsp;css3</div>
-        <div class="skill__list--item">Scss</div>
-        <div class="skill__list--item">JavaScript</div>
-        <div class="skill__list--item">JQuery</div>
-        <div class="skill__list--item">WordPress</div>
-        <div class="skill__list--item">PHP</div>
-        <div class="skill__list--item">Photoshop</div>
-        <div class="skill__list--item">illastlator</div>
-        <div class="skill__list--item">Xd</div>
-        <div class="skill__list--item">Exel</div>
-        <div class="skill__list--item">PowerPoint</div>
-        <div class="skill__list--item">Word</div>
-        <div class="skill__list--item">PremierePro</div>
-      </div>
-    </section>
-    <!-- viewmoreボタン -->
-    <a href="" class="viewMore">viewMore>></a>
-    <h2 class="head2">about</h2>
-    <section id="about" class="aboutBox">
-      <!-- grid親 -->
-      <div class="about__list">
-        <!-- grid子 -->
-        <div class="aboutBox__list--item icon">
-          <img src="" alt="モリマユコアイコン">
-        </div><!-- .aboutBox__list--item icon -->
-        <div class="aboutBox__list--item"></div>
-      </div><!-- .about__list -->
-    </section><!-- #aboutBox .boutBox -->
-    <!-- viewmoreボタン -->
-    <a href="" class="viewMore">viewMore>></a>
-
-    <section id="contact" class="cbtBox">
-      <p>Thank you for wachingt!<br>
-        Contact is here!</p>
-
+      <h2 class="head2">about</h2>
+      <section id="about" class="aboutBox">
+        <!-- grid親 -->
+        <div class="about__list">
+          <!-- grid子 -->
+          <div class="aboutBox__list--item icon">
+            <img src="" alt="モリマユコアイコン">
+          </div><!-- .aboutBox__list--item icon -->
+          <div class="aboutBox__list--item"></div>
+        </div><!-- .about__list -->
+      </section><!-- #aboutBox .boutBox -->
       <!-- viewmoreボタン -->
       <a href="" class="viewMore">viewMore>></a>
-    </section>
-  </main>
+      <section id="contact" class="cbtBox">
+        <p>Thank you for wachingt!<br>
+          Contact is here!</p>
+        <!-- viewmoreボタン -->
+        <a href="" class="viewMore">viewMore>></a>
+      </section>
+    </main>
+  </div><!-- wrapper -->
 
   <footer>
     <small>&copy;2021&nbsp;MoriMayuko</small>

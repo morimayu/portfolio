@@ -3,22 +3,35 @@
 @use 'var'as v;
 @use 'mediaq';
 
-
-.headerTop {
-  background: blueviolet;
-  width: 100%;
-  background-image: url(/images/top-1920-1080.jpg);
+// 要素中央寄せ　最大幅1200px
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.gnav {
-  
-  text-align: center;
+/*ヘッダー*/
+.headerTop {
+  width: 100%;
+  height: auto;
+  /*トップ画像全画面表示*/
+  &__img {
+    background-image: url(/images/top-1920-1080.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
+  }
+}
 
+/*gnav*/
+.gnav {
+  text-align: center;
+// flex親要素
   &__link {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
   }
+  // flex子要素
   &__item {
       font-size: 48px;
       color: #707070;
@@ -28,3 +41,4 @@
 .head2 {
   font-size: 80px;
 }
+
