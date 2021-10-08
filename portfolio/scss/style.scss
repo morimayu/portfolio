@@ -1,6 +1,30 @@
 @charset "utf-8";
 
-@use 'var' as v;
+@use 'var'as v;
 @use 'mediaq';
 
 
+.headerTop {
+  background: blueviolet;
+  width: 100%;
+  background-image: url(/images/top-1920-1080.jpg);
+}
+
+.gnav {
+  
+  text-align: center;
+
+  &__link {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+      font-size: 48px;
+      color: #707070;
+    }
+}
+
+.head2 {
+  font-size: 80px;
+}

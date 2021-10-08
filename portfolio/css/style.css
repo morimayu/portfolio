@@ -1,2 +1,26 @@
+.headerTop {
+  background: blueviolet;
+  width: 100%;
+  background-image: url(/images/top-1920-1080.jpg);
+}
 
+.gnav {
+  text-align: center;
+}
+.gnav__link {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.gnav__item {
+  font-size: 48px;
+  color: #707070;
+}
+
+.head2 {
+  font-size: 80px;
+}
 /*# sourceMappingURL=style.css.map */
