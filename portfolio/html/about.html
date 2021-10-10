@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/about.css">
   <link rel="stylesheet" href="https://use.typekit.net/ydd1ngr.css">
   <link rel="stylesheet" href="https://use.typekit.net/ydd1ngr.css">
   <title>contents</title>
@@ -19,20 +20,21 @@
       <div class="headerTop__img">
         <h1><a href="#">morimayuko&nbsp;portfolio</a></h1>
       </div><!-- headerTop__img -->
-    <div class="gnav">
-      <!-- flex親要素 -->
-      <ul class="gnav__link">
-        <!-- flex子要素 -->
-        <li class="gnav__item"><a href="#">work</a></li>
-        <li class="gnav__item"><a href="#">skill</a></li>
-        <li class="gnav__item"><a href="#">about</a></li>
-        <li class="gnav__item"><a href="#">contact</a></li>
-      </ul><!-- .gnav__link -->
-    </div><!-- .gnav -->
+      <div class="gnav">
+        <!-- flex親要素 -->
+        <ul class="gnav__link">
+          <!-- flex子要素 -->
+          <li class="gnav__item"><a href="#">work</a></li>
+          <li class="gnav__item"><a href="#">skill</a></li>
+          <li class="gnav__item"><a href="#">about</a></li>
+          <li class="gnav__item"><a href="#">contact</a></li>
+        </ul><!-- .gnav__link -->
+      </div><!-- .gnav -->
     </header>
   </section>
   <!-- 全体の幅指定と中央寄せ -->
   <div class="wrapper">
+
     <!-- about -->
     <!-- h2に画像配置 -->
     <div class="h2Img__about">
@@ -40,22 +42,33 @@
     </div><!-- h2Img -->
 
     <section id="about" class="aboutBox centerBox">
-      
+
+      <!-- grid親 -->
+      <div class="about__list">
+        <!-- grid子 -->
+        <img src="/images/iconimg.jpeg" alt="モリマユコアイコン" class="about__list--img">
+
+        <div class="aboutBox__list--item">
+          <p class="about__list--text">モリマユコ自己紹介</p>
         </div><!-- aboutBox__list--item -->
       </div><!-- .about__list -->
 
+
       <!-- h2に画像配置 -->
-      <div class="h2Img__about">
+      <div class="h2Img__history">
         <h2 class="head2 h2Img__item">history</h2>
       </div><!-- h2Img -->
 
-            <!-- h2に画像配置 -->
-            <div class="h2Img__about">
-              <h2 class="head2 h2Img__item">selfPR</h2>
-            </div><!-- h2Img -->
+      <!-- h2に画像配置 -->
+      <div class="h2Img__selfPR">
+        <h2 class="head2 h2Img__item">selfPR</h2>
+      </div><!-- h2Img -->
   </div><!-- wrapper -->
-
-
+  </section>
+  
+  <footer>
+    <p><small>&copy;2021&nbsp;MoriMayuko</small></p>
+  </footer>
 
 </body>
 

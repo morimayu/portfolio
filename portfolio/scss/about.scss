@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+@use 'var' as v;
+
+/*ヘッダー*/
+.headerTop {
+  width: 100%;
+  height: auto;
+
+  /*トップ画像全画面表示*/
+  &__img {
+    background-image: url(/images/ABOUTME-cuttop-1.jpg);
+    // ヘッダー画像3/2表示設定
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/*h2画像*/
+.h2Img__about {
+  margin: 0 0 100px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Marble08-2.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 40%;
+  color: #fcfcfc;
+  text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070,
+    -1px 1px 0 #707070, 1px -1px 0 #707070,
+    0px 1px 0 #707070, 0-1px 0 #707070,
+    -1px 0 0 #707070, 1px 0 0 #707070;
+}
+
+/*h2画像*/
+.h2Img__history {
+  margin: 0 0 100px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Marble04.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 40%;
+  color: #fcfcfc;
+  text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070,
+    -1px 1px 0 #707070, 1px -1px 0 #707070,
+    0px 1px 0 #707070, 0-1px 0 #707070,
+    -1px 0 0 #707070, 1px 0 0 #707070;
+}
+
+/*h2画像*/
+.h2Img__selfPR {
+  margin: 0 0 100px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Marble10.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 40%;
+  color: #fcfcfc;
+  text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070,
+    -1px 1px 0 #707070, 1px -1px 0 #707070,
+    0px 1px 0 #707070, 0-1px 0 #707070,
+    -1px 0 0 #707070, 1px 0 0 #707070;
+}
+
+.about__list {
+  margin-bottom: 100px;
+}
+
+footer {
+  background-image: url(/images/footer08-2.jpg);
+  min-height: 20vh;
+  background-size: cover;
+  p {
+    font-size: 20px;
+    text-align: center;
+    padding: 3%;
+  }
+
+}
