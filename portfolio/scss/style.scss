@@ -3,6 +3,28 @@
 @use 'var'as v;
 @use 'mediaq';
 
+body {
+  // Swear Display Light
+  font-family: swear-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  // Swear Display Bold
+  font-family: swear-display, serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// 全てのaタグ
+a {
+  text-decoration: none;
+  transition: .6s;
+  color: #707070;
+}
+
+a:hover {
+  opacity: .5;
+}
+
 // 要素中央寄せ　最大幅1200px
 .wrapper {
   max-width: 1200px;
@@ -13,6 +35,7 @@
 .headerTop {
   width: 100%;
   height: auto;
+
   /*トップ画像全画面表示*/
   &__img {
     background-image: url(/images/top-1920-1080.jpg);
@@ -25,20 +48,147 @@
 /*gnav*/
 .gnav {
   text-align: center;
-// flex親要素
+
+  // flex親要素
   &__link {
     list-style-type: none;
+
     display: flex;
     justify-content: space-around;
+    padding: 70px;
   }
+
   // flex子要素
   &__item {
-      font-size: 48px;
-      color: #707070;
-    }
+    font-size: 48px;
+    color: #707070;
+  }
 }
 
+/*h2画像*/
+.h2Img {
+  margin: 200px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Marble07.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 40%;
+  color: #fcfcfc;
+  text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070,
+    -1px 1px 0 #707070, 1px -1px 0 #707070,
+    0px 1px 0 #707070, 0-1px 0 #707070,
+    -1px 0 0 #707070, 1px 0 0 #707070;
+}
+
+.h2Img__skill {
+  margin: 200px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Marble09-h.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 40%;
+  color: #fcfcfc;
+  text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070,
+    -1px 1px 0 #707070, 1px -1px 0 #707070,
+    0px 1px 0 #707070, 0-1px 0 #707070,
+    -1px 0 0 #707070, 1px 0 0 #707070;
+}
+
+.h2Img__about {
+  margin: 200px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Marble08.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 40%;
+  color: #fcfcfc;
+  text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070,
+    -1px 1px 0 #707070, 1px -1px 0 #707070,
+    0px 1px 0 #707070, 0-1px 0 #707070,
+    -1px 0 0 #707070, 1px 0 0 #707070;
+}
+
+.h2Img__contact {
+  margin: 200px 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Marble08-2.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 40%;
+  color: #fcfcfc;
+  text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070,
+    -1px 1px 0 #707070, 1px -1px 0 #707070,
+    0px 1px 0 #707070, 0-1px 0 #707070,
+    -1px 0 0 #707070, 1px 0 0 #707070;
+
+}
+
+
+/*h2共通*/
 .head2 {
   font-size: 80px;
 }
 
+.centerBox {
+  text-align: center;
+}
+
+/*モックアップ*/
+.workBox__list {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  &--item {
+    width: 90%;
+  }
+}
+
+/*viewmoreボタン*/
+.viewMore {
+  display: inline-block;
+  background-color: #F4C5DE;
+  width: 265px;
+  height: auto;
+  font-size: 30px;
+  color: #707070;
+  border-radius: 20px;
+  padding: 2%;
+  margin: 10%;
+}
+
+/*skill grid*/
+.skill__list {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, 200px);
+  gap: 20px;
+
+  &--item {
+    background-color: pink;
+  }
+}
+
+/*about flex*/
+.about__list {
+
+display: flex;
+justify-content: center;
+  &--img {
+    width: 30%;
+    padding-right: 5%;
+}
+    p {
+      font-size: 30px;
+    }
+  
+}
+
+.thanks {
+  font-size: 80px;
+}

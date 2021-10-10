@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ydd1ngr.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ydd1ngr.css">
   <title>morimayuko portfolio</title>
 </head>
 
@@ -18,67 +20,110 @@
       <h1><a href="#">morimayuko&nbsp;portfolio</a></h1>
     </div><!-- headerTop__img -->
 
-      <!-- gnavのwrapper -->
-      <div class="gnav">
-        <!-- flex親要素 -->
-        <ul class="gnav__link">
-          <!-- flex子要素 -->
-          <li class="gnav__item">work</li>
-          <li class="gnav__item">skill</li>
-          <li class="gnav__item">about</li>
-          <li class="gnav__item">contact</li>
-        </ul><!-- .gnav__link -->
-      </div><!-- .gnav -->
+    <!-- gnavのwrapper -->
+    <div class="gnav">
+      <!-- flex親要素 -->
+      <ul class="gnav__link">
+        <!-- flex子要素 -->
+        <li class="gnav__item"><a href="#">work</a></li>
+        <li class="gnav__item"><a href="#">skill</a></li>
+        <li class="gnav__item"><a href="#">about</a></li>
+        <li class="gnav__item"><a href="#">contact</a></li>
+      </ul><!-- .gnav__link -->
+    </div><!-- .gnav -->
   </header><!-- #headerTop -->
 
+  <!-- 全体の幅指定と中央寄せ -->
   <div class="wrapper">
     <main>
-      <h2 class="head2">work</h2>
+
+      <!-- work -->
+      <!-- h2に画像配置 -->
+      <div class="h2Img">
+        <h2 class="head2 h2Img__item">work</h2>
+      </div><!-- h2Img -->
+
       <!-- モックアップ -->
-      <section id="work" class="workBox">
+      <section id="work" class="workBox centerBox">
+        <!-- flex親 -->
         <div class="workBox__list">
-          <img src="" alt="" class="workBox__list--item">
-          <img src="" alt="" class="workBox__list--item">
+          <div class="workBox__list--item"><img src="/images/pc_mobile_image.jpg" alt="" class="workBox__list--item">
+          </div>
+          <div class="workBox__list--item"><img src="/images/pc_mobile_image.jpg" alt="" class="workBox__list--item">
+          </div>
         </div><!-- ここまでworkWrapp__list -->
+
         <!-- viewmoreボタン -->
         <a href="" class="viewMore">viewMore>></a>
       </section><!-- ここまでworkWrapp -->
-      <h2 class="head2">skill</h2>
+
+      <!-- skill -->
+      <!-- h2に画像配置 -->
+      <div class="h2Img__skill">
+        <h2 class="head2 h2Img__item">skill</h2>
+      </div><!-- h2Img -->
+
       <!-- スキルgrid -->
-      <section id="skill" class="skillBox">
+      <section id="skill" class="skillBox centerBox">
         <div class="skill__list">
+          <div class="skill__list--item"><img src="/images/htmlcss.gif" alt=""></div>
           <div class="skill__list--item">html5&nbsp;/&nbsp;css3</div>
+          <div class="skill__list--item"><img src="/images/scss.gif" alt=""></div>
           <div class="skill__list--item">Scss</div>
+          <div class="skill__list--item"><img src="/images/javascript.gif" alt=""></div>
           <div class="skill__list--item">JavaScript</div>
+          <div class="skill__list--item"><img src="/images/jquery.gif" alt=""></div>
           <div class="skill__list--item">JQuery</div>
+          <div class="skill__list--item"><img src="/images/wordpress.gif" alt=""></div>
           <div class="skill__list--item">WordPress</div>
+          <div class="skill__list--item"><img src="/images/php.gif" alt=""></div>
           <div class="skill__list--item">PHP</div>
+          <div class="skill__list--item"><img src="/images/photoshop.gif" alt=""></div>
           <div class="skill__list--item">Photoshop</div>
+          <div class="skill__list--item"><img src="/images/illustrator.gif" alt=""></div>
           <div class="skill__list--item">illastlator</div>
+          <div class="skill__list--item"><img src="/images/xd.gif" alt=""></div>
           <div class="skill__list--item">Xd</div>
+          <div class="skill__list--item"><img src="/images/exel.gif" alt=""></div>
           <div class="skill__list--item">Exel</div>
+          <div class="skill__list--item"><img src="/images/powerpoint.gif" alt=""></div>
           <div class="skill__list--item">PowerPoint</div>
+          <div class="skill__list--item"><img src="/images/word.gif" alt=""></div>
           <div class="skill__list--item">Word</div>
+          <div class="skill__list--item"><img src="/images/premierepro.gif" alt=""></div>
           <div class="skill__list--item">PremierePro</div>
         </div>
+
+        <!-- viewmoreボタン -->
+        <a href="" class="viewMore">viewMore>></a>
       </section>
-      <!-- viewmoreボタン -->
-      <a href="" class="viewMore">viewMore>></a>
-      <h2 class="head2">about</h2>
-      <section id="about" class="aboutBox">
+
+      <!-- about -->
+      <!-- h2に画像配置 -->
+      <div class="h2Img__about">
+        <h2 class="head2 h2Img__item">about</h2>
+      </div><!-- h2Img -->
+
+      <section id="about" class="aboutBox centerBox">
         <!-- grid親 -->
         <div class="about__list">
           <!-- grid子 -->
-          <div class="aboutBox__list--item icon">
-            <img src="" alt="モリマユコアイコン">
-          </div><!-- .aboutBox__list--item icon -->
-          <div class="aboutBox__list--item"></div>
+          <img src="/images/iconimg.jpeg" alt="モリマユコアイコン" class="about__list--img">
+
+          <div class="aboutBox__list--item">
+            <p class="about__list--text">モリマユコ自己紹介</p>
+          </div><!-- aboutBox__list--item -->
         </div><!-- .about__list -->
+
+        <!-- viewmoreボタン -->
+        <a href="" class="viewMore">viewMore>></a>
       </section><!-- #aboutBox .boutBox -->
-      <!-- viewmoreボタン -->
-      <a href="" class="viewMore">viewMore>></a>
-      <section id="contact" class="cbtBox">
-        <p>Thank you for wachingt!<br>
+      <!-- h2に画像配置 -->
+      <div class="h2Img__contact">
+        <h2 class="head2 h2Img__item">contact</h2>
+      </div><!-- h2Img -->
+      <section id="contact" class="cbtBox centerBox">
+        <p class="thanks">Thank you for wachingt!<br>
           Contact is here!</p>
         <!-- viewmoreボタン -->
         <a href="" class="viewMore">viewMore>></a>
