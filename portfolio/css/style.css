@@ -3,9 +3,6 @@ body {
   font-family: swear-display, serif;
   font-weight: 400;
   font-style: normal;
-  font-family: swear-display, serif;
-  font-weight: 700;
-  font-style: normal;
 }
 
 a {
@@ -48,16 +45,16 @@ a:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 70px;
+  padding: 3%;
 }
 .gnav__item {
-  font-size: 48px;
+  font-size: 2rem;
   color: #707070;
 }
 
 /*h2画像*/
 .h2Img {
-  margin: 0 0 100px 0;
+  margin: 4% 0 4% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,13 +64,13 @@ a:hover {
   background-image: url(/images/Marble07.jpg);
   background-repeat: no-repeat;
   text-align: center;
-  width: 40%;
+  width: 30%;
   color: #fcfcfc;
   text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070, -1px 1px 0 #707070, 1px -1px 0 #707070, 0px 1px 0 #707070, -1px 0 #707070, -1px 0 0 #707070, 1px 0 0 #707070;
 }
 
 .h2Img__skill {
-  margin: 0 0 100px 0;
+  margin: 4% 0 4% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,13 +80,13 @@ a:hover {
   background-image: url(/images/Marble09-h.jpg);
   background-repeat: no-repeat;
   text-align: center;
-  width: 40%;
+  width: 30%;
   color: #fcfcfc;
   text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070, -1px 1px 0 #707070, 1px -1px 0 #707070, 0px 1px 0 #707070, -1px 0 #707070, -1px 0 0 #707070, 1px 0 0 #707070;
 }
 
 .h2Img__about {
-  margin: 0 0 100px 0;
+  margin: 4% 0 4% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,13 +96,13 @@ a:hover {
   background-image: url(/images/Marble08.jpg);
   background-repeat: no-repeat;
   text-align: center;
-  width: 40%;
+  width: 30%;
   color: #fcfcfc;
   text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070, -1px 1px 0 #707070, 1px -1px 0 #707070, 0px 1px 0 #707070, -1px 0 #707070, -1px 0 0 #707070, 1px 0 0 #707070;
 }
 
 .h2Img__contact {
-  margin: 0 0 100px 0;
+  margin: 4% 0 4% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,14 +112,14 @@ a:hover {
   background-image: url(/images/Marble08-2.jpg);
   background-repeat: no-repeat;
   text-align: center;
-  width: 40%;
+  width: 30%;
   color: #fcfcfc;
   text-shadow: 1px 1px 0 #707070, -1px -1px 0 #707070, -1px 1px 0 #707070, 1px -1px 0 #707070, 0px 1px 0 #707070, -1px 0 #707070, -1px 0 0 #707070, 1px 0 0 #707070;
 }
 
 /*h2共通*/
 .head2 {
-  font-size: 80px;
+  font-size: 2.5rem;
 }
 
 .centerBox {
@@ -145,7 +142,7 @@ a:hover {
 .viewMore {
   display: inline-block;
   background-color: #F4C5DE;
-  width: 265px;
+  width: 20%;
   height: auto;
   font-size: 30px;
   color: #707070;
