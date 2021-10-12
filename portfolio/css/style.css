@@ -12,10 +12,6 @@ a {
   color: #707070;
 }
 
-a:hover {
-  opacity: 0.5;
-}
-
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -28,10 +24,101 @@ a:hover {
   /*トップ画像全画面表示*/
 }
 .headerTop__img {
-  background-image: url(/images/top-1920-1080.jpg);
+  background-image: url(/images/top-1920-1080non.jpg);
   min-height: 100vh;
   background-size: cover;
   background-position: center top;
+  position: relative;
+  padding-top: 10%;
+}
+.headerTop__img h1 {
+  display: inline-block;
+  font-size: 8rem;
+  font-weight: normal;
+  color: #fff;
+}
+.headerTop__img h1 a {
+  color: #fff;
+}
+.headerTop__img .indent {
+  position: absolute;
+  top: 65%;
+  right: 1%;
+  font-size: 8rem;
+  color: #fff;
+}
+.headerTop .scroll {
+  position: absolute;
+  bottom: 5rem;
+  right: 20%;
+  width: 2em;
+  height: 2em;
+}
+.headerTop .scroll span {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-left: 1px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5;
+  z-index: 2;
+  -webkit-animation: popping-arrow 2s infinite ease-out;
+          animation: popping-arrow 2s infinite ease-out;
+}
+
+@-webkit-keyframes popping-arrow {
+  0% {
+    -webkit-transform: translateY(0) rotate(-45deg);
+            transform: translateY(0) rotate(-45deg);
+  }
+  30% {
+    -webkit-transform: translateY(0.5em) rotate(-45deg);
+            transform: translateY(0.5em) rotate(-45deg);
+  }
+  60% {
+    -webkit-transform: translateY(0) rotate(-45deg);
+            transform: translateY(0) rotate(-45deg);
+  }
+}
+
+@keyframes popping-arrow {
+  0% {
+    -webkit-transform: translateY(0) rotate(-45deg);
+            transform: translateY(0) rotate(-45deg);
+  }
+  30% {
+    -webkit-transform: translateY(0.5em) rotate(-45deg);
+            transform: translateY(0.5em) rotate(-45deg);
+  }
+  60% {
+    -webkit-transform: translateY(0) rotate(-45deg);
+            transform: translateY(0) rotate(-45deg);
+  }
+}
+.next-section {
+  padding: 3em 1.5em;
+  background-color: #78909C;
+}
+.next-section h2 {
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+}
+.next-section h2::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  margin-top: 0.5em;
+  margin-left: 45%;
+  background: #F5F5F5;
+}
+.next-section p {
+  padding: 1.5em;
 }
 
 /*gnav*/
@@ -46,6 +133,37 @@ a:hover {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 3%;
+}
+.gnav__link a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.gnav__link a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #333;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.gnav__link:hover::after {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.gnav__link a:hover {
+  opacity: 0.5;
 }
 .gnav__item {
   font-size: 2rem;
@@ -139,16 +257,59 @@ a:hover {
 }
 
 /*viewmoreボタン*/
-.viewMore {
+.btn,
+a.btn,
+button.btn {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  position: relative;
   display: inline-block;
-  background-color: #F4C5DE;
-  width: 20%;
-  height: auto;
-  font-size: 30px;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
   color: #707070;
-  border-radius: 20px;
-  padding: 2%;
-  margin: 10%;
+  border-radius: 0.5rem;
+}
+
+a.btn-flat {
+  overflow: hidden;
+  padding: 1.5rem 4rem;
+  color: #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+a.btn-flat span {
+  position: relative;
+}
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-96%);
+  transform: translateX(-96%);
+  background: pink;
+}
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 /*skill grid*/
@@ -159,9 +320,6 @@ a:hover {
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-}
-.skill__list--item {
-  background-color: pink;
 }
 .skill__list--item img {
   width: 70%;
