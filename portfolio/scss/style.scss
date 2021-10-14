@@ -344,39 +344,48 @@ justify-content: center;
 margin-bottom: 5%;
 padding-top: 5%;
 
-  
+  // アイコン
   &--img {
     width: 30%;
     height: 50%;
     padding: 5% 5% 5% 5%;
 }
 
+
 &--item {
     padding-bottom: 5%;
     font-size: 1rem;
     text-align: left;
 }
-&--like {
-  text-align: center;
-  font-size: 3rem;
-  &--1 {
-    width: 2%;
+&--likes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: start;
+  font-size: 1rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  img {
+    width: 30%;
+    margin: 0 auto;
+   
   }
+ 
 }
-.s2 {
-  width: 10%;
+&--likes--1 {
+  
+   padding-left: 20%;
+ }
+.aboutLike {
+  width: 80%;
 }
-.about__list--likes p{
-  font-size: 3rem;
 }
 .ebi {
-    position: relative;
-    font-size: 3rem;
-    top: 20%;
-  }
-
+  background: pink;
 }
 
+
+// 自己紹介文
 .aboutBox__list--text {
   font-size: 10px;
 }
