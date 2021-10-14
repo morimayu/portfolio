@@ -16,3 +16,10 @@ $point-color :#707070;
     @content;
   }
   }
+
+  @mixin sp2 {
+    @media (max-width: 414px){
+    @content;
+  } 
+    
+  }

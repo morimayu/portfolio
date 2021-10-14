@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/about.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ydd1ngr.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ydd1ngr.css">
   <title>contents</title>
 </head>
 
@@ -16,16 +18,16 @@
     <header class="headerTop">
       <!-- トップ画像 -->
       <div class="headerTop__img">
-        <h1><a href="#">morimayuko&nbsp;portfolio</a></h1>
+        <h1><a href="#index.html">morimayuko&nbsp;portfolio</a></h1>
       </div><!-- headerTop__img -->
       <div class="gnav">
         <!-- flex親要素 -->
         <ul class="gnav__link">
           <!-- flex子要素 -->
-          <li class="gnav__item"><a href="#">work</a></li>
-          <li class="gnav__item"><a href="#">skill</a></li>
-          <li class="gnav__item"><a href="#">about</a></li>
-          <li class="gnav__item"><a href="#">contact</a></li>
+          <!-- <li class="gnav__item"><a href="#">work</a></li> -->
+          <li class="gnav__item"><a class="my-parts" href="index.html#skill">skill</a></li>
+          <li class="gnav__item"><a class="my-parts" href="#about">about</a></li>
+          <li class="gnav__item"><a class="my-parts" href="index.html#contact">contact</a></li>
         </ul><!-- .gnav__link -->
       </div><!-- .gnav -->
     </header>
@@ -41,38 +43,56 @@
 
     <section id="about" class="aboutBox centerBox">
 
-      <!-- grid親 -->
-      <div class="about__list">
-        <!-- grid子 -->
-        <img src="/images/iconimg.jpeg" alt="モリマユコアイコン" class="about__list--img">
-
+      <div class="about__col">
+        <h3 class="about__list--good">Future</h3>
         <div class="aboutBox__list--item">
-          <p class="about__list--text">森 麻結子。28歳。独身。<br>
-          趣味はオシャレを楽しむこと。なのでお金がかかることが悩み。<br>
-          24歳で大恋愛の末、栃木県から広島県に移住。<br>
-          広島の県民性が気に入り定住する。なんでも揃うところと方言が好き。<br>
-          2020年の1月で勤務していた店舗が閉店し、前から興味があったweb制作を独学し始める。<br>
-          始めた頃から「デザイン」より「プログラミング」をやりたいと考えていたが、<br>
-          やっていくうちに、その気持ちが確信に変わる。めちゃくちゃ楽しくなる。<br>
-          独学をしていく中でパソコンスクールHA*NAの求職者支援訓練の<br>
-          を知る。デザイン養成科だがプログラミングの基礎も勉強できることを知る。<br>
-          絶対に通うことを決意し受験。合格する。<br>
-        </p>
+          <p>コーディングスキルを上達させて、さらに幅広く活躍できるように<br>
+            フロントエンドエンジニアとしてのキャリアを築きたいです。
+          </p>
+          <p>今はそのために、基礎としてのマークアップ言語の学習のほか、<br>
+            まだまだ未熟ではありますがJavaScriptの理解を深めている最中です。<br>
+            訓練校で学んだことだけでは、私の理想のスキルへの到達は難しいと感じたため<br>
+            日々つ積み重ねをし続け、ゆくゆくは御社で活躍できるようなエンジニアになりたいと思っています。
+          </p>
         </div><!-- aboutBox__list--item -->
       </div><!-- .about__list -->
 
+      <div class="about__col2 s2flex">
+        <div class="s2img"><img src="/images/blks2.jpg" alt=""></div>
+        <div class="s2img"><img src="/images/s2.jpg" alt=""></div>
+        <div class="s2img"><img src="/images/blks2.jpg" alt=""></div>
+      </div>
 
-      <!-- h2に画像配置 -->
-      <div class="h2Img__history">
-        <h2 class="head2 h2Img__item">history</h2>
-      </div><!-- h2Img -->
+      <h3 class="about__list--good">Effort</h3>
+
+      <div class="effort__box">
+        Ï<div class="aboutBox__list--s2">
+          <img src="/images/htmlcss.gif" alt="" class="efs2">
+        </div>
+        <div class="effort__box--item">
+          <p>HTMLのコーディングを頑張っています。<br>
+            難しさの中にパズルを解くような楽しさを感じ、<br>
+            毎日夢中でパソコンと向き合っています。
+          </p>
+        </div>
+      </div><!-- effort__box -->
+
+      <div class="effort__box">
+        Ï<div class="aboutBox__list--s2">
+          <img src="/images/scss.gif" alt="">
+        </div>
+        <div class="effort__box--item">
+          <p>SCSSでサイトデザインができるよう頑張っています。<br>
+            使いこなすことでスピーディーにスタイルを指定でき、<br>
+            作業効率も上がると考えているからです。
+          </p>
+        </div>
+      </div><!-- effort__box -->
 
 
-      <!-- h2に画像配置 -->
-      <div class="h2Img__selfPR">
-        <h2 class="head2 h2Img__item">selfPR</h2>
-      </div><!-- h2Img -->
-  </div><!-- wrapper -->
+  </div><!-- aboutBox__list--item -->
+
+  </div> <!-- wrapper -->
   </section>
 
   <footer>
@@ -81,7 +101,6 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <!--自作のJS-->
-  <script src="js/9-1-6.js"></script>
 </body>
 
 </html>

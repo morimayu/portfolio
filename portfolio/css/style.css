@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: swear-display, serif;
   font-weight: 400;
@@ -333,11 +337,15 @@ a.btn-flat:hover:before {
   grid-template-rows: 3fr;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .skill__list {
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+  }
+}
 .skill__list--item img {
   width: 100%;
   margin-top: -2vw;
 }
-
 /*about flex*/
 .about__list {
   background-color: #ffe4e1;
@@ -360,6 +368,11 @@ a.btn-flat:hover:before {
   font-size: 1rem;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .about__list--item {
+    padding-right: 5%;
+  }
+}
 .about__list--likes {
   width: 100%;
   display: grid;
@@ -368,6 +381,12 @@ a.btn-flat:hover:before {
   font-size: 1rem;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+@media (max-width: 768px) {
+  .about__list--likes {
+    padding-right: 5%;
+    padding-bottom: 10%;
+  }
 }
 .about__list--likes img {
   width: 30%;
@@ -399,6 +418,11 @@ a.btn-flat:hover:before {
 .cbtBox__flex {
   width: 30%;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cbtBox__flex {
+    width: 50%;
+  }
 }
 .cbtBox__flex--item {
   display: -webkit-box;
