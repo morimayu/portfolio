@@ -181,7 +181,7 @@ scroll span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(/images/Marble07.jpg);
+  background-image: url(../images/Marble07.jpg);
   background-repeat: no-repeat;
   text-align: center;
   width: 30%;
