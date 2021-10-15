@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@use 'var'as v;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  // Swear Display Light
+  font-family: swear-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  // Swear Display Bold
+  // font-family: swear-display, serif;
+  // font-weight: 700;
+  // font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  transition: .6s;
+  color: v.$point-color;
+}
+
+// ホバーアクション
+.my-parts {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.my-parts::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: v.$point-color;
+  transition: all .3s ease 0s;
+}
+
+.my-parts:hover {
+  cursor: pointer;
+}
+
+.my-parts:hover::after {
+  width: 100%;
+}
+
+/*ヘッダー*/
+.headerTop {
+  width: 100%;
+  height: auto;
+
+  /*トップ画像全画面表示*/
+  &__img {
+    background-image: url(/images/ABOUTME-cuttop-1.jpg);
+    // ヘッダー画像3/2表示設定
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+      display: inline-block;
+      opacity: .5;
+    }
+  }
+}
+
+.gnav__link {
+  margin-bottom: 10%;
+}
+
+/*h2画像*/
+.h2Img__about {
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/Marble08-2.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 40%;
+  color: #fcfcfc;
+  text-shadow: v.$text-shadow;
+}
+
+
+.about__col {
+  background-color: #ffe4e1;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+.about__list--good {
+  font-size: 2rem;
+  font-weight: normal;
+  padding-bottom: 5%;
+}
+
+.about__col2 {
+  background-color: #fff;
+  padding-bottom: 10%;
+  padding-top: 10%;
+
+}
+
+.s2flex {
+  display: flex;
+}
+
+.s2img img {
+  width: 40%;
+  
+}
+
+.effort__box {
+  display: flex;
+  justify-content: space-around;
+  &--item {
+    padding-top: 10%;
+    padding-right: 14%;
+    padding-bottom: 10%;
+  }
+}
+
+.aboutBox__list--s2 img{
+  width: 35%;
+  // padding-bottom: 10%;
+}
+
+footer {
+  background-image: url(/images/footer08-2.jpg);
+  min-height: 20vh;
+  background-size: cover;
+
+  p {
+    font-size: 20px;
+    text-align: center;
+    padding: 3%;
+  }
+
+}
+
