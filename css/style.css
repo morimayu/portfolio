@@ -181,7 +181,7 @@ scroll span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../images/Marble07.jpg);
+  background-image: url(images/Marble07.jpg);
   background-repeat: no-repeat;
   text-align: center;
   width: 30%;
@@ -197,7 +197,7 @@ scroll span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../images/Marble09-h.jpg);
+  background-image: url(images/Marble09-h.jpg);
   background-repeat: no-repeat;
   text-align: center;
   width: 30%;
@@ -213,7 +213,7 @@ scroll span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../images/Marble08.jpg);
+  background-image: url(images/Marble08.jpg);
   background-repeat: no-repeat;
   text-align: center;
   width: 30%;
@@ -229,7 +229,7 @@ scroll span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../images/Marble08-2.jpg);
+  background-image: url(images/Marble08-2.jpg);
   background-repeat: no-repeat;
   text-align: center;
   width: 30%;
@@ -451,7 +451,7 @@ input[type=submit] {
 }
 
 footer {
-  background-image: url(../images/footer08-2.jpg);
+  background-image: url(images/footer08-2.jpg);
   min-height: 20vh;
   background-size: cover;
 }

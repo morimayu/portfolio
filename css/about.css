@@ -49,7 +49,7 @@ a {
   /*トップ画像全画面表示*/
 }
 .headerTop__img {
-  background-image: url(../images/ABOUTME-cuttop-1.jpg);
+  background-image: url(images/ABOUTME-cuttop-1.jpg);
   min-height: 70vh;
   background-size: cover;
   background-position: center;
@@ -71,7 +71,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../images/Marble08-2.jpg);
+  background-image: url(images/Marble08-2.jpg);
   background-repeat: no-repeat;
   text-align: center;
   width: 40%;
@@ -125,7 +125,7 @@ a {
 }
 
 footer {
-  background-image: url(../images/footer08-2.jpg);
+  background-image: url(images/footer08-2.jpg);
   min-height: 20vh;
   background-size: cover;
 }
