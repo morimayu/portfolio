@@ -3,12 +3,12 @@
 
 <head>
   <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-<link rel="manifest" href="../../images/favicon/site.webmanifest">
-<link rel="mask-icon" href="../../images/favicon/safari-pinned-tab.svg" color="#d7a0d7">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../../images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../../images/favicon/safari-pinned-tab.svg" color="#d7a0d7">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,25 +39,33 @@
   </header>
   <!-- headerTop__img -->
 
-  <!-- gnavのwrapper -->
-  <div class="gnav">
-    <!-- flex親要素 -->
-    <ul class="gnav__link">
-      <!-- flex子要素 -->
-      <li class="gnav__item"><a class="my-parts" href="#skill">skill</a></li>
-      <li class="gnav__item"><a class="my-parts" href="#about">about</a></li>
-      <li class="gnav__item"><a class="my-parts" href="#contact">contact</a></li>
-    </ul><!-- .gnav__link -->
-  </div><!-- .gnav -->
-  </header><!-- #headerTop -->
+  <div id="hamburger">
+    <p class="btn-gNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </p>
+    <!-- gnavのwrapper -->
+    <div class="gnav">
+      <nav id="gNav">
+        <!-- flex親要素 -->
+        <ul class="gnav__link gNav-menu" id="gnavi-link">
+          <!-- flex子要素 -->
+          <li class="gnav__item"><a class="my-parts" href="#skill">skill</a></li>
+          <li class="gnav__item"><a class="my-parts" href="#about">about</a></li>
+          <li class="gnav__item"><a class="my-parts" href="#contact">contact</a></li>
+        </ul><!-- .gnav__link -->
+      </nav>
+    </div><!-- .gnav -->
+    </header><!-- #headerTop -->
 
-  <!-- 全体の幅指定と中央寄せ -->
-  <div class="wrapper">
-    <main>
+    <!-- 全体の幅指定と中央寄せ -->
+    <div class="wrapper">
+      <main>
 
-      <!-- work -->
-      <!-- h2に画像配置 -->
-      <!-- <div class="h2Img">
+        <!-- work -->
+        <!-- h2に画像配置 -->
+        <!-- <div class="h2Img">
         <h2 class="head2 h2Img__item">work</h2>
       </div>h2Img -->
 
@@ -67,54 +75,55 @@
 
         <!-- skill -->
         <!-- h2に画像配置 -->
+        <section id="skill" class="skillBox centerBox"></section>
         <div class="h2Img__skill">
           <h2 class="head2 h2Img__item">skill</h2>
         </div><!-- h2Img -->
 
         <!-- スキルgrid -->
-        <section id="skill" class="skillBox centerBox">
-          <p class="cateBox">Coding</p>
-          <div class="skill__list part2">
-            <div class="skill__list--item"><img src="../../images/htmlcss.gif" alt=""></div>
-            <div class="skill__list--item">html5&nbsp;/&nbsp;css3</div>
-            <div class="skill__list--item"><img src="../../images/scss.gif" alt=""></div>
-            <div class="skill__list--item">Scss</div>
-            <div class="skill__list--item"><img src="../../images/javascript.gif" alt=""></div>
-            <div class="skill__list--item">JavaScript</div>
-            <div class="skill__list--item"><img src="../../images/jquery.gif" alt=""></div>
-            <div class="skill__list--item">JQuery</div>
-            <div class="skill__list--item"><img src="../../images/wordpress.gif" alt=""></div>
-            <div class="skill__list--item">WordPress</div>
-            <div class="skill__list--item"><img src="../../images/php.gif" alt=""></div>
-            <div class="skill__list--item">PHP</div>
-            <div class="skill__list--item"><img src="../../images/responsive.gif" alt="" class="res"></div>
-            <div class="skill__list--item">Responsive</div>
-          </div><!-- skill__list -->
 
-          <p class="cateBox">Design</p>
-          <div class="skill__list part2">
-            <div class="skill__list--item"><img src="../../images/photoshop.gif" alt=""></div>
-            <div class="skill__list--item">Photoshop</div>
-            <div class="skill__list--item"><img src="../../images/illustrator.gif" alt=""></div>
-            <div class="skill__list--item">illastlator</div>
-            <div class="skill__list--item"><img src="../../images/xd.gif" alt=""></div>
-            <div class="skill__list--item">Xd</div>
-          </div><!-- skill__list -->
+        <p class="cateBox">Coding</p>
+        <div class="skill__list part2">
+          <div class="skill__list--item"><img src="../../images/htmlcss.gif" alt=""></div>
+          <div class="skill__list--item">html5&nbsp;/&nbsp;css3</div>
+          <div class="skill__list--item"><img src="../../images/scss.gif" alt=""></div>
+          <div class="skill__list--item">Scss</div>
+          <div class="skill__list--item"><img src="../../images/javascript.gif" alt=""></div>
+          <div class="skill__list--item">JavaScript</div>
+          <div class="skill__list--item"><img src="../../images/jquery.gif" alt=""></div>
+          <div class="skill__list--item">JQuery</div>
+          <div class="skill__list--item"><img src="../../images/wordpress.gif" alt=""></div>
+          <div class="skill__list--item">WordPress</div>
+          <div class="skill__list--item"><img src="../../images/php.gif" alt=""></div>
+          <div class="skill__list--item">PHP</div>
+          <div class="skill__list--item"><img src="../../images/responsive.gif" alt="" class="res"></div>
+          <div class="skill__list--item">Responsive</div>
+        </div><!-- skill__list -->
 
-          <p class="cateBox">Office</p>
-          <div class="skill__list">
-            <div class="skill__list--item"><img src="../../images/exel.gif" alt=""></div>
-            <div class="skill__list--item">Exel</div>
-            <div class="skill__list--item"><img src="../../images/powerpoint.gif" alt=""></div>
-            <div class="skill__list--item">PowerPoint</div>
-            <div class="skill__list--item"><img src="../../images/word.gif" alt=""></div>
-            <div class="skill__list--item">Word</div>
-          </div>
-          <p class="cateBox">Movie</p>
-          <div class="skill__list">
-            <div class="skill__list--item"><img src="../../images/premierepro.gif" alt=""></div>
-            <div class="skill__list--item">PremierePro</div>
-          </div>
+        <p class="cateBox">Design</p>
+        <div class="skill__list part2">
+          <div class="skill__list--item"><img src="../../images/photoshop.gif" alt=""></div>
+          <div class="skill__list--item">Photoshop</div>
+          <div class="skill__list--item"><img src="../../images/illustrator.gif" alt=""></div>
+          <div class="skill__list--item">illastlator</div>
+          <div class="skill__list--item"><img src="../../images/xd.gif" alt=""></div>
+          <div class="skill__list--item">Xd</div>
+        </div><!-- skill__list -->
+
+        <p class="cateBox">Office</p>
+        <div class="skill__list">
+          <div class="skill__list--item"><img src="../../images/exel.gif" alt=""></div>
+          <div class="skill__list--item">Exel</div>
+          <div class="skill__list--item"><img src="../../images/powerpoint.gif" alt=""></div>
+          <div class="skill__list--item">PowerPoint</div>
+          <div class="skill__list--item"><img src="../../images/word.gif" alt=""></div>
+          <div class="skill__list--item">Word</div>
+        </div>
+        <p class="cateBox">Movie</p>
+        <div class="skill__list">
+          <div class="skill__list--item"><img src="../../images/premierepro.gif" alt=""></div>
+          <div class="skill__list--item">PremierePro</div>
+        </div>
 
         </section>
         <!-- about -->
@@ -135,26 +144,26 @@
                 自分は都会寄りの人間だと思っていた節がある。広島の都会ぶりにただただ圧倒された田舎者。</p>
               <p>趣味はお金を使うこと。将来の夢はバリキャリの独身貴族。</p>
               <p>大恋愛の末広島にやってきたが、見事に大破局。</br>
-              さらに新型コロナウィルスの大流行により、勤務していた店舗も閉店。</p>
+                さらに新型コロナウィルスの大流行により、勤務していた店舗も閉店。</p>
               <p>長年接客販売に従事してきたが、色々タイミングが重なったことで自分のキャリアについて考え直す。</br>
-              無職ついでにと勉強しだしたプログラミングに見事ハマり、ガツガツ独学を進めるが行き詰まる。</br>
-              そんな折に偶然知った求職者支援訓練。応募締め切り2日前。滑り込み合格を果たす。<br>
+                無職ついでにと勉強しだしたプログラミングに見事ハマり、ガツガツ独学を進めるが行き詰まる。</br>
+                そんな折に偶然知った求職者支援訓練。応募締め切り2日前。滑り込み合格を果たす。<br>
               </p>
             </div><!-- aboutBox__list--item -->
           </div><!-- .about__list -->
-          
+
           <div class="about__list--likes">
             <!-- <div class="about__list--likes--1"> -->
-              <img src="../../images/s2.jpg" alt="" class="s2">
+            <img src="../../images/s2.jpg" alt="" class="s2">
             <!-- </div> -->
             <p class="aboutLike">食べること。おしゃれに勤しむこと。おしゃべりすること。家でボーっとすることが好きです。<br>
               好奇心旺盛なので新しいことが大好きです。<br>
               それだけではなく、新しい出会いや人間関係も楽しいと感じるタイプです。<br>
-            最近では勉強したことをアウトプットして、出来ることが増えていくのを感じてウキウキしています。<br>
-          </p>
-          
+              最近では勉強したことをアウトプットして、出来ることが増えていくのを感じてウキウキしています。<br>
+            </p>
+
           </div>
-          
+
           <!-- viewmoreボタン -->
           <a href="about.html" class="btn btn-flat"><span>PUSH</span></a>
 
@@ -200,20 +209,20 @@
             <h2 class="head2 h2Img__item">about</h2>
           </div>h2Img -->
 
-         
-            <!-- viewmoreボタン -->
-            <!-- <a href="" class="viewMore">viewMore>></a> -->
-            <!-- <a href="" class="btn btn-flat"><span>Submit</span></a>
+
+          <!-- viewmoreボタン -->
+          <!-- <a href="" class="viewMore">viewMore>></a> -->
+          <!-- <a href="" class="btn btn-flat"><span>Submit</span></a>
 >>>>>>> Stashed changes
           </section> -->
-    </main>
-  </div>
+      </main>
+    </div>
   </div><!-- wrapper -->
 
   <footer>
     <p><small>&copy;2021&nbsp;MoriMayuko</small></p>
   </footer>
-  <!-- <script src="/js/"></script> -->
+  <!-- <script src="../js/portfolio.js"></script> -->
 </body>
 
 </html>

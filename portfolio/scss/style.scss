@@ -162,7 +162,7 @@ scroll {
 .gnav {
   text-align: center;
   background: #f5deb3;
-
+  
   // flex親要素
   &__link {
     background-color: #ffe4e1;
@@ -170,10 +170,10 @@ scroll {
     display: flex;
     justify-content: space-around;
     padding: 2%;
-
-
-
-
+position: fixed;
+  z-index: 2;
+  top: 0;
+    width: 100%;
   }
 
   // flex子要素
@@ -183,6 +183,83 @@ scroll {
     padding: 1vw;
   }
 
+}
+
+//ハンバーガーメニュー
+#gnavi-link.fixed {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+#hamburger .btn-gNav span{
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background: #666;
+	border-radius: 10px;
+	-webkit-transition: all 400ms;
+	transition: all 400ms;
+}
+#hamburger .btn-gNav span:nth-child(1) {
+	top:0;
+}
+#hamburger .btn-gNav span:nth-child(2) {
+	top:10px;
+}
+#hamburger .btn-gNav span:nth-child(3) {
+	top:20px;
+}
+#hamburger .btn-gNav{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 24px;
+	z-index: 3;
+}
+#gNav{
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 100%;
+	height: 20px;
+	z-index: 2;
+}
+#gNav.open{
+	right: 0px;
+}
+#gNav .gNav-menu{
+	width: 100%;
+	height:20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+@media screen and (min-width: 768px){
+	.btn-gNav{
+		display: none;
+	}
+	#gNav{
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 50px;
+	}
+	#gNav .gNav-menu{
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 20%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		padding-left: 50px;
+	}
+	#gNav .gNav-menu li{
+		padding-top: 15px;
+	}
 }
 
 /*h2画像*/
