@@ -223,6 +223,18 @@ scroll span {
   z-index: 2;
 }
 
+#hamburger .btn-gNav .open span:nth-child(1) {
+  top: 0;
+}
+
+#hamburger .btn-gNav .open span:nth-child(2) {
+  top: 10px;
+}
+
+#hamburger .btn-gNav .open span:nth-child(3) {
+  top: 20px;
+}
+
 #gNav.open {
   right: 0px;
 }
