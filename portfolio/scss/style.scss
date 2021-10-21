@@ -74,9 +74,12 @@ a {
       font-weight: normal;
       // opacity: 0;
       color: #fff;
-
+      padding: 1rem;
       a {
         color: #fff;
+      }
+      @include v.sp2 {
+        opacity: 0;
       }
     }
 
@@ -87,6 +90,10 @@ a {
       right: 1%;
       font-size: 8rem;
       color: #fff;
+      padding: 1rem;
+      @include v.sp2 {
+        opacity: 0;
+      }
     }
   }
 }
@@ -141,7 +148,7 @@ scroll {
     text-align: center;
     font-size: 24px;
     letter-spacing: .1em;
-
+}
     &::after {
       content: '';
       display: block;
@@ -151,18 +158,16 @@ scroll {
       margin-left: 45%;
       background: #F5F5F5;
     }
+    
   }
 
-  p {
-    padding: 1.5em;
-  }
-}
+  
 
 /*gnav*/
 .gnav {
   text-align: center;
   background: #f5deb3;
-  
+
   // flex親要素
   &__link {
     background-color: #ffe4e1;
@@ -170,9 +175,9 @@ scroll {
     display: flex;
     justify-content: space-around;
     padding: 2%;
-position: fixed;
-  z-index: 2;
-  top: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
     width: 100%;
   }
 
@@ -193,84 +198,103 @@ position: fixed;
   left: 0;
 }
 
-#hamburger .btn-gNav span{
-	position: absolute;
-	width: 100%;
-	height: 4px;
-	background: #666;
-	border-radius: 10px;
-	-webkit-transition: all 400ms;
-	transition: all 400ms;
+#hamburger .btn-gNav span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #666;
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
+
 #hamburger .btn-gNav span:nth-child(1) {
-	top:0;
+  top: 0;
 }
+
 #hamburger .btn-gNav span:nth-child(2) {
-	top:10px;
+  top: 10px;
 }
+
 #hamburger .btn-gNav span:nth-child(3) {
-	top:20px;
+  top: 20px;
 }
-#hamburger .btn-gNav{
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	width: 30px;
-	height: 24px;
-	z-index: 3;
+
+#hamburger .btn-gNav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 24px;
+  z-index: 3;
 }
-#gNav{
-	position: fixed;
-	top: 0;
-	right: -100%;
-	width: 100%;
-	height: 20px;
-	z-index: 2;
+
+#gNav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 20px;
+  z-index: 2;
 }
 
 //閉じる
-#hamburger .btn-gNav .open span:nth-child(1) {
-	top:0;
+#hamburger .btn-gNav.open span:nth-child(1) {
+  top: 10px;
+  left: -15px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 100%;
 }
-#hamburger .btn-gNav .open span:nth-child(2) {
-	top:10px;
+
+#hamburger .btn-gNav.open span:nth-child(2) {
+  opacity: 0;
 }
-#hamburger .btn-gNav .open span:nth-child(3) {
-	top:20px;
+
+#hamburger .btn-gNav.open span:nth-child(3) {
+  top: 22px;
+  left: -15px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 100%;
 }
-#gNav.open{
-	right: 0px;
+
+#gNav.open {
+  right: 0px;
 }
-#gNav .gNav-menu{
-	width: 100%;
-	height:30%;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+
+#gNav .gNav-menu {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-@media screen and (min-width: 768px){
-	.btn-gNav{
-		display: none;
-	}
-	#gNav{
-		position: fixed;
-		top: 0;
-		right: 0;
-		height: 50px;
-	}
-	#gNav .gNav-menu{
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		height: 20%;
-		position: fixed;
-		top: 0;
-		right: 0;
-		padding-left: 50px;
-	}
-	#gNav .gNav-menu li{
-		padding-top: 15px;
-	}
+
+@media screen and (min-width: 768px) {
+  .btn-gNav {
+    display: none;
+  }
+
+  #gNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+  }
+
+  #gNav .gNav-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-left: 50px;
+  }
+
+  #gNav .gNav-menu li {
+    padding-top: 15px;
+  }
 }
 
 /*h2画像*/
@@ -297,7 +321,12 @@ position: fixed;
   width: 30%;
   color: #fcfcfc;
   text-shadow: v.$text-shadow;
-
+@include v.sp1 {
+  margin: 10% auto 10% auto;
+}
+@include v.sp2 {
+  width: 40%;
+}
 }
 
 .h2Img__about {
@@ -310,7 +339,14 @@ position: fixed;
   width: 30%;
   color: #fcfcfc;
   text-shadow: v.$text-shadow;
-
+  @include v.sp1 {
+    margin: 10% auto 10% auto;
+  }
+  @include v.sp2 {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    width: 50%;
+  }
 }
 
 .h2Img__contact {
@@ -323,7 +359,14 @@ position: fixed;
   width: 30%;
   color: #fcfcfc;
   text-shadow: v.$text-shadow;
-
+  @include v.sp1 {
+    margin: 10% auto 10% auto;
+  }
+  @include v.sp2 {
+    // padding-left: 5%;
+    // padding-right: 5%;
+    width: 45%;
+  }
 }
 
 
@@ -417,7 +460,7 @@ a.btn-flat:hover:before {
 // コーディングとかデザインとか題名
 .cateBox {
   font-size: 3rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   margin-bottom: 2rem;
   margin-top: 3rem;
   border-bottom: 1px solid v.$point-color;
@@ -431,8 +474,12 @@ a.btn-flat:hover:before {
   grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
   grid-template-rows: 3fr;
   gap: 10px;
+
   @include v.sp1 {
     grid-template-columns: 1fr 2fr 1fr 2fr;
+  }
+  @include v.sp2 {
+    display: block;
   }
 
 
@@ -442,11 +489,22 @@ a.btn-flat:hover:before {
     img {
       width: 100%;
       margin-top: -2vw;
+    
     }
-    @include v.sp1 {}
+    @include v.sp1 {
+      padding-top: 30%;
+      font-size: 2rem;
+    }
+    @include v.sp2 {
+      padding-top: 0;
+    }
+  
+  &--item:nth-child(24) {
+    padding-bottom: 0;
+  }
+
   }
 }
-
 /*about flex*/
 
 .about__list {
@@ -455,22 +513,25 @@ a.btn-flat:hover:before {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
-  padding-top: 5%;
+  padding: 5%;
 
   // アイコン
   &--img {
     width: 30%;
     height: 50%;
-    padding: 5% 5% 5% 5%;
+    padding: 5% 5% 5% 0;
   }
+  
 
 
   &--item {
+    padding-top: 5%;
     padding-bottom: 5%;
     font-size: 1rem;
     text-align: left;
+
     @include v.sp1 {
-      padding-right: 5%;
+      padding: 0 5% 0 0;
     }
   }
 
@@ -482,6 +543,7 @@ a.btn-flat:hover:before {
     font-size: 1rem;
     padding-top: 5%;
     padding-bottom: 5%;
+
     @include v.sp1 {
       padding-right: 5%;
       padding-bottom: 10%;
@@ -490,8 +552,10 @@ a.btn-flat:hover:before {
     img {
       width: 30%;
       margin: 0 auto;
-
+      @include v.sp1 {
+      padding-top: 30%;
     }
+  }
 
   }
 
@@ -522,14 +586,21 @@ a.btn-flat:hover:before {
   .thanks {
     font-size: 2rem;
     padding-bottom: 5%;
+    @include v.sp2 {
+      margin-bottom: 10%;
+    }
   }
 }
 
 .cbtBox__flex {
   width: 30%;
   margin: 0 auto;
+
   @include v.sp1 {
     width: 50%;
+  }
+  @include v.sp2 {
+    width: 85%;
   }
 
   &--item {
