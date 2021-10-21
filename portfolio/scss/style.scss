@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 @use 'var'as v;
-@use 'mediaq';
 
 html {
   scroll-behavior: smooth;
@@ -77,6 +76,9 @@ a {
       padding: 1rem;
       a {
         color: #fff;
+      }
+      @include v.sp1 {
+        font-size: 5rem;
       }
       @include v.sp2 {
         opacity: 0;
@@ -238,36 +240,6 @@ scroll {
   z-index: 2;
 }
 
-//閉じる
-#hamburger .btn-gNav.open span:nth-child(1) {
-  top: 10px;
-  left: -15px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 100%;
-}
-
-#hamburger .btn-gNav.open span:nth-child(2) {
-  opacity: 0;
-}
-
-#hamburger .btn-gNav.open span:nth-child(3) {
-  top: 22px;
-  left: -15px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 100%;
-}
-
-#gNav.open {
-  right: 0px;
-}
-
-#gNav .gNav-menu {
-  width: 100%;
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 
 @media screen and (min-width: 768px) {
   .btn-gNav {
@@ -614,6 +586,7 @@ a.btn-flat:hover:before {
   }
 }
 
+
 input,
 textarea {
   display: inline-block;
@@ -630,7 +603,7 @@ input[type="submit"] {
 
 
 footer {
-  background-image: url(/images/footer08-2.jpg);
+  background-image: url(../images/footer08-2.jpg);
   min-height: 20vh;
   background-size: cover;
 

@@ -9,7 +9,7 @@ $(function() {
 	});
 });
 
-$('.btn-gNav').on('click', function(){
-  $('.btn-gNav').toggleClass('open');
-});
+// $('.btn-gNav').on('click', function(){
+//   $('.btn-gNav').toggleClass('open');
+// });
 

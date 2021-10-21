@@ -83,6 +83,12 @@ a {
   width: 40%;
   color: #fcfcfc;
   text-shadow: v.$text-shadow;
+  @include v.sp1 {
+    margin: 10% auto 10% auto;
+  }
+  @include v.sp2 {
+    width: 40%;
+  }
 }
 
 
@@ -127,6 +133,18 @@ a {
 .aboutBox__list--s2 img{
   width: 35%;
   // padding-bottom: 10%;
+}
+
+.dream {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #ffe4e1;
+  // &__list {
+  //   padding-top: 10%;
+  // }
+  &__text {
+    padding-bottom: 5%;
+  }
 }
 
 footer {
