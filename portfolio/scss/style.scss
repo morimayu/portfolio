@@ -449,6 +449,12 @@ a.btn-flat:hover:before {
   transform: translateX(0%);
 }
 
+.moji {
+  @include v.sp2 {
+    position: relative;
+    bottom: 150px;
+  }
+}
 
 
 
@@ -504,9 +510,28 @@ a.btn-flat:hover:before {
   &--item:nth-child(24) {
     padding-bottom: 0;
   }
-
   }
 }
+
+.skillLevel {
+  display: none;
+
+  @include v.sp2 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+}
+
+.moji2 {
+  @include v.sp2 {
+    display: none;
+    padding: 0;
+  }
+}
+
 /*about flex*/
 
 .about__list {
@@ -616,12 +641,42 @@ a.btn-flat:hover:before {
   }
 }
 
+@media screen and (max-width:1100px) {
+  .cbtBox__flex {
+    width: 50%;
+  } 
+}
+
 
 input,
 textarea {
   display: inline-block;
   border: 1px solid #000;
   width: 80%;
+
+  @include v.sp1 {
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+  .cbtBox__flex {
+    width: 80%;
+  }
+
+  .cbtBox__flex--item {
+  display: block;
+}
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+}
 }
 
 input[type="submit"] {

@@ -480,6 +480,13 @@ a.btn-flat:hover:before {
   transform: translateX(0%);
 }
 
+@media (max-width: 500px) {
+  .moji {
+    position: relative;
+    bottom: 150px;
+  }
+}
+
 /*skill grid*/
 .skillBox {
   font-size: 2rem;
@@ -530,6 +537,30 @@ a.btn-flat:hover:before {
 }
 .skill__list--item--item:nth-child(24) {
   padding-bottom: 0;
+}
+
+.skillLevel {
+  display: none;
+}
+@media (max-width: 500px) {
+  .skillLevel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .moji2 {
+    display: none;
+    padding: 0;
+  }
 }
 
 /*about flex*/
@@ -639,13 +670,43 @@ a.btn-flat:hover:before {
   margin-top: 20%;
 }
 
+@media screen and (max-width: 1100px) {
+  .cbtBox__flex {
+    width: 50%;
+  }
+}
 input,
 textarea {
   display: inline-block;
   border: 1px solid #000;
   width: 80%;
 }
+@media (max-width: 768px) {
+  input,
+textarea {
+    width: 70%;
+  }
+}
 
+@media screen and (max-width: 500px) {
+  .cbtBox__flex {
+    width: 80%;
+  }
+
+  .cbtBox__flex--item {
+    display: block;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type=text],
+textarea {
+    width: 100%;
+  }
+}
 input[type=submit] {
   opacity: 0;
   position: relative;
